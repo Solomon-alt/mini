@@ -1,0 +1,25 @@
+<view class="container">
+  <view wx:for="{{typeList}}" wx:key="id" class="box {{num===index?'active':''}}" data-index="{{index}}" data-item="{{item}}"
+    bindtap="handle">
+    {{item.name}}
+  </view>
+</view>
+<view wx:if="{{arr.length>0}}" class="mins">
+  <view class="{{flag?'active':''}}" bindtap="handle1">全部</view>
+  <view wx:for="{{arr}}" wx:key="index" data-index="{{index}}" bindtap="handle2" data-item="{{item}}"
+    class="{{!flag&&num1===index?'active':''}}">
+    {{item}}
+  </view>
+</view>
+<view class="content"></view>
+<view class="detail" wx:for="{{books}}" wx:key="_id" data-item="{{item}}" bindtap="goto">
+  <image src="https://statics.zhuishushenqi.com{{item.cover}}" class="cover"></image>
+  <view class="novel-detail">
+    <view class="handline">{{item.title}}</view>
+    <view class="author">{{item.author}}</view>
+    <view class="shortIntro">{{item.shortIntro}}</view>
+   <view wx:if="{{index<3}}" wx:for="{{item.tags}}" wx:key="index" >
+     <view class="tags {{index===0?'color1':''}}{{index===1?'color2':''}}{{index===2?'color3':''}}">{{item}}</view>
+   </view>
+  </view>
+</view>

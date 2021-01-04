@@ -1,0 +1,73 @@
+.pic {
+  position: relative;
+  display: flex;
+  height: 100rpx;
+  margin-top: 60rpx;
+}
+
+.img {
+  position: absolute;
+  margin: 20rpx 0 0 40rpx;
+}
+
+.img,
+.cycle {
+  height: 60%;
+  width: 60rpx;
+}
+
+.help {
+  border: 1rpx solid #ABABAB;
+  height: 80rpx;
+  margin: 10rpx 0 0 480rpx;
+  line-height: 80rpx;
+  padding: 0 30rpx;
+  color: #ABABAB;
+  border-radius: 30rpx;
+}
+
+.cycle {
+  display: block;
+  margin: 20rpx 0 0 40rpx;
+}
+
+.content {
+  margin-top: 140rpx;
+  text-align: center;
+  color: #343434;
+  font-size: 30rpx;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.box view:nth-child(3n-1) {
+  margin: 0 5%;
+}
+
+.contain {
+  height: 500rpx;
+  width: 30%;
+  position: relative;
+}
+
+.tupian {
+  width: 100%;
+  height: 400rpx;
+}
+
+.wrong {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.wrong>image {
+  width: 100%;
+  height: 100%;
+}

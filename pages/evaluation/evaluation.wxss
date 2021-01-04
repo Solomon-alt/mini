@@ -1,0 +1,108 @@
+.box {
+  height: 250rpx;
+  background: #CB1C36;
+}
+
+.pic {
+  width: 250rpx;
+  height: 350rpx;
+  position: absolute;
+  top: 40rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title {
+  margin-top: 140rpx;
+  text-align: center;
+  font-weight: 700;
+}
+
+.author {
+  margin-top: 10rpx;
+  color: #B7B7B7;
+  text-align: center;
+  font-size: 32rpx;
+}
+
+.btn {
+  height: 40rpx;
+}
+
+.operation {
+  position: relative;
+  height: 60rpx;
+  width: 60%;
+  margin: auto;
+}
+
+.operation>view {
+  position: absolute;
+  top: 30rpx;
+  padding: 10rpx 20rpx;
+  border-radius: 40rpx;
+}
+
+.operation view:nth-child(1) {
+  background: #EC304C;
+  color: white;
+
+}
+
+.operation view:nth-child(2) {
+  right: 0;
+  border: 1rpx solid #74726E;
+  color: #74726E;
+  background: #fff;
+}
+
+.down {
+  background: #F7F7F7;
+  margin-top: 27rpx;
+  height: 630rpx;
+  overflow: hidden;
+}
+
+.center-evaluation {
+  height: 80rpx;
+  margin-top: 40rpx;
+}
+
+.star {
+  width: 40%;
+  height: 40rpx;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.star1 {
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.lastChapter {
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.new {
+  color: #40E0D4;
+}
+
+.expand {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .5);
+}
+
+.chart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500rpx;
+  height: 700rpx;
+}

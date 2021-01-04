@@ -1,0 +1,19 @@
+.tab{
+  display: flex;
+  background: #F7F7F7;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.tab>view{
+  flex: 50%;
+}
+text{
+  display: block;
+  width: 80rpx;
+  height: 75rpx;
+  text-align: center;
+  margin: auto;
+}
+.active{
+  border-bottom: 8rpx solid red;
+}

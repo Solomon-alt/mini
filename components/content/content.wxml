@@ -1,0 +1,7 @@
+<view class="gender">{{gender}}</view>
+<view class="box">
+  <view class="content" wx:for="{{data}}" wx:key="index" bindtap="handle" data-major="{{major[index]}}">
+    <view class="title">{{item.name}}</view>
+    <view class="count">{{item.bookCount}}本</view>
+  </view>
+</view>

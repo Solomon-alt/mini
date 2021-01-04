@@ -1,0 +1,34 @@
+.gender {
+  color: #9F9F9F;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-left: 20rpx;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.box view:nth-child(3n-1) {
+  margin: 0 8rpx;
+}
+
+.content {
+  width: 32%;
+  border: 1rpx solid #F7F7F7;
+  height: 150rpx;
+}
+
+.title {
+  font-weight: 700;
+  text-align: center;
+  margin: 20rpx 0;
+}
+
+.count {
+  text-align: center;
+  color: #9C9C9C;
+  font-size: 24rpx;
+}

@@ -1,0 +1,41 @@
+<input type="text" placeholder="输入书名或作者名" bindconfirm="handleInput" model:value="{{value}}" />
+<image src="../../assets/search.png" class="seek"></image>
+<view class="wrong" bindtap="delete">
+  <image src="../../assets/wrong.png"></image>
+</view>
+<view class="box">
+  <view>大家都在搜</view>
+  <view class="img" bindtap="handle">
+    <image src="../../assets/change.png" class="pic"></image>
+    <view class="word">换一换</view>
+  </view>
+</view>
+<view>
+  <view class="content" wx:for="{{newHotWords}}" wx:key="book" data-item="{{item}}" wx:if="{{index>=num&&index<=num1}}"
+    bindtap="click">
+    <view
+      class="hot {{index===0?'active':''||index===1?'active1':''||index===2?'active2':''||index===3?'active3':''||index===4?'active4':''||index===5?'active5':''||index===6?'active6':''}}">
+      {{item.word}}</view>
+  </view>
+</view>
+<view class="remove">
+  <view class="history">搜索历史</view>
+  <view bindtap="empty" class="empty">
+    <image src="../../assets/trash.png" class="pics"></image>
+    <text class="clear">清空</text>
+  </view>
+</view>
+<view class="down">
+  <view class="contains" wx:for="{{searchHistory}}" wx:key="index">{{item}}</view>
+</view>
+<view class="up" wx:if="{{value.length>0}}">
+  <view class="noval" wx:for="{{books}}" wx:key="_id" bindtap="goto" data-item="{{item}}">
+    <image src="https://statics.zhuishushenqi.com{{item.cover}}" class="left-pic"></image>
+    <view class="right-content">
+      <view class="head">{{item.title}}</view>
+      <view class="zuozhe">{{item.author}}</view>
+      <view class="neirong">{{item.shortIntro}}</view>
+      <view class="latelyFollower">最近收藏:{{item.latelyFollower}}</view>
+    </view>
+  </view>
+</view>

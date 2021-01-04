@@ -1,0 +1,96 @@
+.container,
+.mins {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background: #fff;
+  z-index: 5;
+}
+
+.container {
+  border-bottom: 1rpx solid #F2F2F2;
+}
+
+.box {
+  width: 80rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 30rpx;
+}
+
+.mins {
+  top: 60rpx;
+  padding-left: 10rpx;
+}
+
+.mins>view {
+  font-size: 22rpx;
+  margin-right: 10rpx;
+}
+
+.active {
+  color: #D85568;
+}
+
+.content {
+  height: 100rpx;
+}
+
+.detail {
+  display: flex;
+  height: 350rpx;
+  border-bottom: 1rpx solid #F1F1F1;
+  margin: 0 1%;
+}
+
+.cover {
+  width: 300rpx;
+  height: 300rpx;
+  margin-top: 25rpx;
+}
+
+.novel-detail {
+  height: 300rpx;
+  width: 420rpx;
+  margin: 25rpx 0 0 10rpx;
+}
+
+.handline {
+  font-size: 28rpx;
+  font-weight: 700;
+}
+
+.author {
+  font-size: 32rpx;
+  margin: 10rpx 0;
+}
+
+.shortIntro {
+  font-size: 32rpx;
+  display: -webkit-box !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.tags {
+  float: left;
+  font-size: 28rpx;
+  margin: 20rpx 20rpx 0 10rpx;
+  padding: 5rpx 15rpx;
+  color: white;
+}
+
+.color1 {
+  background: #FF8C00;
+}
+
+.color2 {
+  background: #00CED1;
+}
+
+.color3 {
+  background: #FF4500;
+}

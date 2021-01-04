@@ -1,0 +1,73 @@
+/* pages/list/list.wxss */
+.box {
+  position: fixed;
+  top: 0;
+  display: flex;
+  background: #F7F7F7;
+  height: 80rpx;
+  width: 100%;
+}
+
+.content {
+  flex: 1;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.active {
+  border-bottom: 8rpx solid #EC304C;
+  color: #EC304C;
+}
+
+.weekRank {
+  display: flex;
+  border-bottom: 1rpx solid #ccc;
+  height: 400rpx;
+}
+
+image {
+  width: 250rpx;
+  height: 350rpx;
+  margin-top: 25rpx;
+}
+
+.right {
+  height: 350rpx;
+  width: 450rpx;
+  margin: 25rpx 0 0 20rpx;
+}
+
+.title {
+  color: #363636;
+  font-size: 30rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 700;
+  margin-top: 25rpx;
+}
+
+.shortIntro,
+.author {
+  color: #999;
+  font-size: 32rpx;
+}
+
+.author {
+  margin: 15rpx 0;
+}
+
+.shortIntro {
+  display: -webkit-box !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.top {
+  line-height: 80rpx;
+  width: 33%;
+  text-align: center;
+}

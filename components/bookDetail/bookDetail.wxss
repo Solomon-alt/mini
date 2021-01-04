@@ -1,0 +1,176 @@
+.box {
+  height: 100%;
+  background: white;
+  width: 95%;
+  margin: auto;
+}
+
+.top {
+  height: 80rpx;
+  border-bottom: 1rpx solid #EFEFEF;
+  display: flex;
+}
+
+.top>view {
+  flex: 1;
+  line-height: 80rpx;
+  text-align: center;
+}
+
+text {
+  color: #6A6A78;
+}
+
+.active {
+  border-bottom: 8rpx solid #EC304C;
+  color: #EC304C
+}
+
+.left,
+.right {
+  height: calc(100% - 80rpx);
+  overflow: auto;
+}
+
+.shortIntro {
+  margin-bottom: 30rpx;
+  color: #333;
+  font-size: 28rpx;
+  text-indent: 2rem;
+  display: -webkit-box !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+}
+
+.all {
+  width: 95%;
+  height: 50rpx;
+  background: #F7F7F7;
+  margin: auto;
+}
+
+.directory {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+  margin: auto;
+}
+
+.pic {
+  height: 40rpx;
+  width: 40rpx;
+  margin-top: 5rpx;
+}
+
+.total {
+  color: #ADADAD;
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+
+.huan {
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-top: 15rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.word {
+  color: #3D3D3D;
+  font-size: 30rpx;
+}
+
+.huan-you {
+  display: flex;
+  width: 160rpx;
+  height: 100%;
+}
+
+.photo {
+  height: 40rpx;
+  width: 40rpx;
+  margin-top: 5rpx;
+}
+
+.one {
+  font-size: 30rpx;
+  line-height: 50rpx;
+  color: #FF664B;
+}
+
+.contain {
+  width: 100%;
+  overflow: hidden;
+}
+
+.book {
+  display: flex;
+  flex-wrap: wrap;
+  width: 110%;
+  height: 480rpx;
+  margin-bottom: 25rpx;
+}
+
+.book>view {
+  width: 30%;
+  height: 100%;
+}
+
+.tu {
+  height: 280rpx;
+  width: 100%;
+  margin-right: 15rpx;
+}
+.biaoti{
+  text-align: center;
+  color: #595959;
+  font-size: 30rpx;
+}
+.pingjia,
+.tupian,
+.author {
+  height: 140rpx;
+}
+
+.pingjia {
+  display: flex;
+  margin-bottom: 10rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.tupian {
+  width: 140rpx;
+  border-radius: 50%;
+}
+
+.author {
+  padding-left: 50rpx;
+  width: 500rpx;
+  margin-left: 15rpx;
+}
+
+.nickname {
+  color: #FF6A4F;
+  font-size: 32rpx;
+}
+
+.thing {
+  text-indent: 2em;
+  font-size: 32rpx;
+  color: #6F6F6F;
+  display: -webkit-box !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.foot {
+  height: 140rpx;
+}

@@ -1,0 +1,9 @@
+<view class="gender">{{gender}}</view>
+<view wx:for="{{data}}" wx:key="_id" wx:if="{{index<6}}" class="content" bindtap="handle" data-item="{{item}}">
+  <view class="img">
+    <image src="https://statics.zhuishushenqi.com{{item.cover}}"></image>
+  </view>
+  <view class="box">
+    <view class="title">{{item.title}}</view>
+  </view>
+</view>

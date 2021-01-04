@@ -1,0 +1,36 @@
+<view class="box">
+  <view wx:if="{{!totalRank}}" class="top"><text class="active">周榜</text></view>
+  <view class="content" wx:for="{{arr}}" wx:key="id" bindtap="handle" data-index="{{index}}" wx:if="{{totalRank}}">
+    <text class="{{num===index?'active':''}}">{{item.name}}</text>
+  </view>
+</view>
+<view wx:if="{{num===0}}" style="margin-top:80rpx">
+  <view class="weekRank" wx:for="{{books}}" wx:key="_id" bindtap="goto" data-item="{{item}}">
+    <image src="https://statics.zhuishushenqi.com{{item.cover}}"></image>
+    <view class="right">
+      <view class="title">{{item.title}}</view>
+      <view class="author">{{item.author}}</view>
+      <view class="shortIntro">{{item.shortIntro}}</view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{num===1}}" style="margin-top:80rpx">
+  <view class="weekRank" wx:for="{{books1}}" wx:key="_id" bindtap="goto" data-item="{{item}}">
+    <image src="https://statics.zhuishushenqi.com{{item.cover}}"></image>
+    <view class="right">
+      <view class="title">{{item.title}}</view>
+      <view class="author">{{item.author}}</view>
+      <view class="shortIntro">{{item.shortIntro}}</view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{num===2}}" style="margin-top:80rpx">
+  <view class="weekRank" wx:for="{{books2}}" wx:key="_id" bindtap="goto" data-item="{{item}}">
+    <image src="https://statics.zhuishushenqi.com{{item.cover}}"></image>
+    <view class="right">
+      <view class="title">{{item.title}}</view>
+      <view class="author">{{item.author}}</view>
+      <view class="shortIntro">{{item.shortIntro}}</view>
+    </view>
+  </view>
+</view>

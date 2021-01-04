@@ -1,0 +1,16 @@
+<view class="pic">
+  <image src="../../assets/correct.png" class="img" wx:if="{{flag}}" bindtap="handle"></image>
+  <image src="../../assets/writing.png" class="img" wx:else bindtap="handle"></image>
+  <view class="help" bindtap="goto">帮助</view>
+  <image src="../../assets/cycle.png" class="cycle"></image>
+</view>
+<view class="content" wx:if="{{arr1.length===0}}">主人还没有收藏书籍喔，请去书城收藏吧!</view>
+<view class="box">
+  <view wx:for="{{arr1}}" wx:key="index" class="contain" bindtap="handleOne" data-item="{{item}}">
+    <image src="https://statics.zhuishushenqi.com{{item.cover}}" class="tupian"></image>
+    <view style="text-align:center">{{item.title}}</view>
+    <view class="wrong" wx:if="{{!flag}}">
+      <image src="../../assets/wrong.png" bindtap="del" data-index="{{index}}"></image>
+    </view>
+  </view>
+</view>

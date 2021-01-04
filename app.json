@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/bookcase/bookcase",
+    "pages/search/search",
+    "pages/bookCity/bookCity",
+    "pages/help/help",
+    "pages/details/details",
+    "pages/evaluation/evaluation",
+    "pages/list/list"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#cde",
+    "navigationBarTitleText": "微信",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#393939",
+    "selectedColor": "#D34A5E",
+    "list": [
+      {
+        "pagePath": "pages/bookcase/bookcase",
+        "text": "书架",
+        "iconPath": "./assets/iconBookcase.png",
+        "selectedIconPath": "./assets/selectedBookcase.png"
+      },
+      {
+        "pagePath": "pages/bookCity/bookCity",
+        "text": "书城",
+        "iconPath": "./assets/iconBookCity.png",
+        "selectedIconPath": "./assets/selectedBookCity.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "./assets/iconSearch.png",
+        "selectedIconPath": "./assets/selectedSearch.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

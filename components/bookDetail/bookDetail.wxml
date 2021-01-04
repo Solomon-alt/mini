@@ -1,0 +1,44 @@
+<view class="box">
+  <view class="top">
+    <view class="detail" bindtap="handle">
+      <text class="{{flag?'active':''}}">详情</text>
+    </view>
+    <view class="evaluation" bindtap="handle1">
+      <text class="{{!flag?'active':''}}">评价({{total}})</text>
+    </view>
+  </view>
+  <view class="left" wx:if="{{flag}}">
+    <view class="shortIntro">简介:{{abstract.shortIntro}}</view>
+    <view class="all">
+      <view class="directory">
+        <image src="../../assets/catalog.png" class="pic"></image>
+        <view class="total"> 总目录({{num}})章</view>
+      </view>
+      <view class="huan">
+        <view class="word">看过这本书的还在看</view>
+        <view class="huan-you">
+          <image src="../../assets/change.png" class="photo"></image>
+          <view class="one" bindtap="handle2">换一换</view>
+        </view>
+      </view>
+      <view class="contain">
+        <view class="book">
+          <view wx:for="{{books}}" wx:key="_id" wx:if="{{index===a||index===b||index===c}}" bindtap="handleItem" data-item="{{item}}">
+            <image src="https://statics.zhuishushenqi.com{{item.cover}}" class="tu"></image>
+            <view class="biaoti">{{item.title}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="right" wx:if="{{!flag}}">
+    <view class="pingjia" wx:for="{{arr}}" wx:key="_id">
+      <image src="https://statics.zhuishushenqi.com{{item.author.avatar}}" class="tupian"></image>
+      <view class="author">
+        <view class="nickname">{{item.author.nickname}}</view>
+        <view class="thing">{{item.content}}</view>
+      </view>
+    </view>
+    <view class="foot"></view>
+  </view>
+</view>

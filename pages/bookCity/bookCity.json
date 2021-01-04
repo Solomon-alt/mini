@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "tab": "/components/bookCityTab/bookCityTab",
+    "content": "/components/content/content",
+    "rank": "/components/rank/rank"
+  },
+  "navigationBarBackgroundColor": "#CB1C36",
+  "navigationBarTitleText": "书城",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}

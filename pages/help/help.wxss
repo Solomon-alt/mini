@@ -1,0 +1,25 @@
+.box {
+  padding: 0 30rpx;
+}
+
+.title {
+  font-size: 60rpx;
+  font-weight: 700;
+  margin: 20rpx 0;
+  color: #333;
+}
+
+.problem {
+  font-size: 35rpx;
+  color: #383838;
+  border-bottom: 1px solid #F9F9F9;
+}
+
+.page {
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  color: #8A8A8A;
+  text-indent: 2em;
+  border-bottom: 1px solid #F9F9F9;
+  line-height: 50rpx;
+}

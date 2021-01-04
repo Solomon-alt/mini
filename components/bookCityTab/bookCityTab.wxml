@@ -1,0 +1,4 @@
+<view class="tab">
+  <view class="left" bindtap="handle"><text class=" {{flag ? 'active':''}}">分类</text></view>
+  <view class="right" bindtap="handle1"><text class="{{!flag? 'active':''}}">排行</text></view>
+</view>

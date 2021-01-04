@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "books":"/components/bookDetail/bookDetail"
+  },
+  "navigationBarBackgroundColor": "#CB1C36",
+  "navigationBarTitleText": "详情",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}

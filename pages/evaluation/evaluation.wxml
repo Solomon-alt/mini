@@ -1,0 +1,28 @@
+<view class="box"></view>
+<image src="https://statics.zhuishushenqi.com{{obj.cover}}" class="pic" bindtap="expand"></image>
+<view class="title">{{obj.title}}</view>
+<view class="author">{{obj.author}}</view>
+<view class="btn">
+  <view class="operation">
+    <view>开始阅读</view>
+    <view bindtap="handleBookcase" wx:if="{{flag}}">{{msg}}</view>
+    <view wx:if="{{!flag}}">{{msg1}}</view>
+  </view>
+</view>
+<view class="expand" wx:if="{{num1===1}}" bindtap="reduction">
+  <image src="https://statics.zhuishushenqi.com{{obj.cover}}" class="chart" bindlongtap="save"></image>
+</view>
+<view class="down">
+  <view class="center-evaluation">
+    <view class="star">
+      <view wx:for="{{arr1}}" wx:key="index" wx:if="{{index<score}}">
+        <image src="../../assets/starRed.png" class="star1"></image>
+      </view>
+      <view wx:for="{{arr1}}" wx:key="index" wx:if="{{index<score1}}">
+        <image src="../../assets/starNine.png" class="star1"></image>
+      </view>
+    </view>
+    <view class="lastChapter">更新至<text class="new">{{obj.lastChapter}}</text></view>
+  </view>
+  <books abstract="{{obj}}" arr="{{arr}}" total="{{total}}" data="{{id}}" num="{{num}}"></books>
+</view>

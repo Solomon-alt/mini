@@ -1,0 +1,6 @@
+<tab bindsend="send"></tab>
+<content wx:if="{{flag}}" data="{{man}}" gender="{{gender1}}" major="{{major1}}"></content>
+<content wx:if="{{flag}}" data="{{woman}}" gender="{{gender2}}" major="{{major2}}"></content>
+<content wx:if="{{flag}}" data="{{publish}}" gender="{{gender3}}" major="{{major3}}"></content>
+<rank wx:if="{{!flag}}" gender="{{gender1}}" data="{{male}}"></rank>
+<rank wx:if="{{!flag}}" gender="{{gender2}}" data="{{female}}"></rank>

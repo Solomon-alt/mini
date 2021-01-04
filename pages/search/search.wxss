@@ -1,0 +1,196 @@
+input {
+  width: 480rpx;
+  height: 80rpx;
+  background: rgb(239, 239, 239);
+  border-radius: 20rpx;
+  margin: 20rpx auto;
+  padding-left: 200rpx;
+}
+
+.wrong,
+image {
+  position: absolute;
+  top: 35rpx;
+  left: 160rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.wrong {
+  z-index: 5;
+  top: 0;
+  margin-left: 300rpx;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  padding: 0 20rpx;
+}
+
+.img {
+  position: relative;
+  width: 180rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pic,
+.word {
+  position: absolute;
+  top: 0;
+}
+
+.pic {
+  left: 0;
+}
+
+.word {
+  left: 70rpx;
+  color: #FF6347;
+}
+
+.hot {
+  float: left;
+  font-size: 30rpx;
+  color: white;
+  background: tomato;
+  padding: 10rpx 20rpx;
+  margin: 20rpx 30rpx;
+}
+
+.active {
+  background: #FFC0CB;
+}
+
+.active1 {
+  background: #7B68EE;
+}
+
+.active2 {
+  background: #FF69B4;
+}
+
+.active3 {
+  background: #66CDAA;
+}
+
+.active4 {
+  background: #FA8072;
+}
+
+.active5 {
+  background: #228B22;
+}
+
+.active6 {
+  background: #259785;
+}
+
+.remove {
+  display: flex;
+  justify-content: space-between;
+  line-height: 80rpx;
+  margin-top: 400rpx;
+  width: 100%;
+  height: 80rpx;
+  background: #EFEFEF;
+}
+
+.history {
+  margin-left: 50rpx;
+}
+
+.empty {
+  position: relative;
+  margin-right: 50rpx;
+  width: 220rpx;
+}
+
+.pics {
+  position: absolute;
+  left: 0;
+  top: 10rpx;
+}
+
+.clear {
+  margin-left: 80rpx;
+  color: #FF664A;
+}
+
+.down {
+  width: 100%;
+  height: 413rpx;
+  overflow: auto;
+}
+
+.up {
+  position: absolute;
+  top: 120rpx;
+  width: 100%;
+  height: calc(100vh - 120rpx);
+  background: #fff;
+  overflow: auto;
+}
+
+.noval {
+  position: relative;
+  margin: 30rpx auto;
+  width: 95%;
+  height: 420rpx;
+}
+
+.left-pic,
+.right-content {
+  position: absolute;
+  top: 10rpx;
+  height: 400rpx;
+}
+
+.left-pic {
+  left: 0;
+  width: 250rpx;
+}
+
+.right-content {
+  right: 20rpx;
+  width: 400rpx;
+}
+
+.head {
+  font-weight: 700;
+}
+
+.zuozhe,
+.neirong {
+  font-size: 30rpx;
+  color: #999;
+}
+
+.zuozhe {
+  margin: 20rpx 0;
+}
+
+.neirong {
+  display: -webkit-box !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+.latelyFollower {
+  color: #FA8072;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+}
+
+.contains {
+  border-bottom: 1rps solid #bbb;
+  font-size: 30rpx;
+  color: #aaa;
+}
